@@ -11,9 +11,6 @@ def run_in_thread(fn):
         
     return run
 
-#array(list) to be merge sorted
-list_of_num = [3304,8221,26849,14038,1509,6367,7856,21362]
-
 #merge sort algorithm with thread decorator
 @run_in_thread
 def mergeSort(arr):
@@ -66,6 +63,8 @@ def mergeSort(arr):
         
 
 def main():
+    #array(list) to be merge sorted
+    list_of_num = [3304,8221,26849,14038,1509,6367,7856,21362]
     mergeSort(list_of_num)
 
 if __name__ == "__main__":
